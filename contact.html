@@ -68,7 +68,7 @@
             </div>
             <div class="contact-col">
 
-                 <form action="" onsubmit="sendEmail(); reset(); return false;" >
+                 <form action="https://formsubmit.co/smmahin13579682@email.com"  >
                     <input type="text" id="name" placeholder="Enter your name" required>
                     <input type="email" id="email" placeholder="Enter email address" required>
                     <input type="text" id="subject" placeholder="Enter Your subject" required>
@@ -79,26 +79,9 @@
             </div>
         </div>
     </section>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     
-    <script>
-         function sendEmail(){
-           Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "una@gmail.com",
-            Password : "F835873C9C9C2D7A5F004746F177AA9F217A",
-            To : 'smmahin13579682@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "This is the subject",
-            Body : "Name: " + document.getElementById("name").value
-            + "<br> Email" + document.getElementById("email").value
-            + "<br> Subject" + document.getElementById("subject").value
-            + "<br> Message"  + document.getElementById("message").value
-           }).then(
-             message => alert("message sent successfully")
-           );
-       }
-    </script>
+    
+   
     
 
    
